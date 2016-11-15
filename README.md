@@ -8,7 +8,7 @@ Implementation of Naive Bayes Classifier algorithm in Swift3.x, supporting **Gau
 
 ## Usage
 
-```
+```swift
 import SwiftNaiveBayes
 
 let nb = NaiveBayes()
