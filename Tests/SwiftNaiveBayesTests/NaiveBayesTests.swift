@@ -51,7 +51,7 @@ class NaiveBayesTests: XCTestCase {
             let nbB = NaiveBayes()
             try nbB.restore("/tmp/nbA.session")
             let resultB = nbB.predict(posTest)
-            
+
             for (label, score) in resultA {
                 XCTAssertEqual(score, resultB[label])
             }
