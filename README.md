@@ -8,6 +8,8 @@ Implementation of Naive Bayes Classifier algorithm in Swift3.x, supporting **Gau
 
 ## Usage
 
+SwiftNaiveBayes is same as [Scikit learn](http://scikit-learn.org/stable/modules/naive_bayes.html)'s interface.
+
 ```swift
 import SwiftNaiveBayes
 
@@ -24,6 +26,8 @@ nb.fit(["positive": pos, "negative": neg])
 // Predicts log probabilities for each label
 let logProbs = nb.predict(posTest)
 print(logProbs) //=> ["positive": -8.9186205290602363, "negative": -10.227308671603783]
+// Use method chainng
+nb.fit(["positive": pos, "negative": neg]).predict(posTest)
 
 // Save session
 try! nb.save("nb.session")
