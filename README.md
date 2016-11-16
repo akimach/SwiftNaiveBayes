@@ -1,4 +1,4 @@
-# SwiftNaiveBayes
+![logo/logo.png](SwiftNaiveBayes)
 
 Naive Bayes classifier implemented in Swift
 
