@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = "SwiftNaiveBayes"
-  s.version     = "1.0.0"
+  s.version     = "1.0.1"
   s.summary     = "Naive Bayes classifier implemented in Swift"
   s.homepage    = "https://github.com/akimach/SwiftNaiveBayes"
   s.license     = { :type => "MIT" }
