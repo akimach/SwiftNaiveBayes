@@ -84,6 +84,16 @@ class BernoulliNaiveBayesTests: XCTestCase {
         }
     }
     
+    static var allTests : [(String, (BernoulliNaiveBayesTests) -> () throws -> Void)] {
+        return [
+            ("testFit1", testFit1),
+            ("testFit2", testFit2),
+            ("testFit3", testFit3),
+            ("testFileIO1", testFileIO1),
+            ("testFileIO2", testFileIO2),
+        ]
+    }
+    
     private func bestLabel(_ result: [String:Double]) -> String {
         var bestLabel: String = (result.first?.key)!
         var bestScore: Double = (result.first?.value)!

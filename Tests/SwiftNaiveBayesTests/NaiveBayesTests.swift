@@ -15,7 +15,7 @@ class NaiveBayesTests: XCTestCase {
         super.tearDown()
     }
 
-    func testFit() {
+    func testFit1() {
         let nb = NaiveBayes()
         let result = nb.fit(["positive": pos, "negative": neg]).predict(posTest)
         XCTAssertEqual(self.bestLabel(result), "positive")
@@ -75,6 +75,16 @@ class NaiveBayesTests: XCTestCase {
         } catch {
             XCTFail()
         }
+    }
+    
+    static var allTests : [(String, (NaiveBayesTests) -> () throws -> Void)] {
+        return [
+            ("testFit1", testFit1),
+            ("testFit2", testFit2),
+            ("testFit3", testFit3),
+            ("testFileIO1", testFileIO1),
+            ("testFileIO2", testFileIO2),
+        ]
     }
     
     private func bestLabel(_ result: [String:Double]) -> String {

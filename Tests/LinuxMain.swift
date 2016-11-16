@@ -1,6 +1,10 @@
 import XCTest
-@testable import SwiftNaiveBayesTests
+@testable import NaiveBayesTests
+@testable import GaussianNaiveBayesTests
+@testable import BernoulliNaiveBayesTests
 
 XCTMain([
-     testCase(SwiftNaiveBayesTests.allTests),
+     testCase(NaiveBayesTests.allTests),
+     testCase(GaussianNaiveBayesTests.allTests),
+     testCase(BernoulliNaiveBayesTests.allTests),
 ])
