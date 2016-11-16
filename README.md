@@ -22,7 +22,8 @@ let posTest = ["computer": 2, "ruby": 1, "swift": 1, "programming": 1]
 // ["Label A": ["token A": Frequency of token A, ...]]
 nb.fit(["positive": pos, "negative": neg])
 // Predicts log probabilities for each label
-nb.predict(posTest)
+let logProbs = nb.predict(posTest)
+print(logProbs) //=> ["positive": -8.9186205290602363, "negative": -10.227308671603783]
 
 // Save session
 try! nb.save("nb.session")
@@ -34,13 +35,13 @@ let nb2 = NaiveBayes("nb.session")
 
 ### Swift Package Manager
 
-Package.swift
+`Package.swift`:
 
 ```swift 
 import PackageDescription
 
 let package = Package(
-    name: "YourProjectName",
+    name: "MyApp",
     targets: [],
     dependencies: [
         .Package(url: "https://github.com/akimach/SwiftNaiveBayes.git", majorVersion: 1),
@@ -48,11 +49,26 @@ let package = Package(
 )
 ```
 
-Run `swift build`.
-
 ### CocoaPods
 
+`Podfile`:
+
+```
+platform :ios, '8.0'
+use_frameworks!
+
+target 'MyApp' do
+    pod 'SwiftNaiveBayes'
+end
+```
+
 ### Carthage
+
+`Cartfile`:
+
+```
+github "akimach/SwiftNaiveBayes"
+```
 
 ## Licence
 
