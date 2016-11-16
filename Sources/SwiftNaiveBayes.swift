@@ -26,7 +26,7 @@ public class NaiveBayes {
         let _ = self.addInstances(dataset)
     }
     
-    init(_ path: String) throws {
+    public init(_ path: String) throws {
         do {
             try self.restore(path)
         } catch (let e) {
@@ -163,7 +163,7 @@ class GaussianNaiveBayes {
         let _ = self.addInstances(dataset)
     }
     
-    init(_ path: String) throws {
+    public init(_ path: String) throws {
         do {
             try self.restore(path)
         } catch (let e) {
