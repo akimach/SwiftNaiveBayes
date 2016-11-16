@@ -26,7 +26,7 @@ nb.fit(["positive": pos, "negative": neg])
 // Predicts log probabilities for each label
 let logProbs = nb.predict(posTest)
 print(logProbs) //=> ["positive": -8.9186205290602363, "negative": -10.227308671603783]
-// Use method chainng
+// Use method chaining
 nb.fit(["positive": pos, "negative": neg]).predict(posTest)
 
 // Save session
