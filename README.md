@@ -1,7 +1,13 @@
-![SwiftNaiveBayes](/logo/logo.png)
+SwiftNaiveBayes
+===
 
-[![](http://img.shields.io/badge/Swift-3.0-blue.svg)]()![macOS](https://img.shields.io/badge/os-macOS-green.svg?style=flat)
-![Linux](https://img.shields.io/badge/os-linux-green.svg?style=flat)[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)[![CocoaPods compatible](https://img.shields.io/badge/CocoaPods-compatible-4BC51D.svg)](https://github.com/CocoaPods/CocoaPods)[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+![](http://img.shields.io/badge/Swift-3.0-blue.svg)
+![macOS](https://img.shields.io/badge/os-macOS-green.svg?style=flat)
+![Linux](https://img.shields.io/badge/os-linux-green.svg?style=flat)
+![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)
+![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)
+![CocoaPods compatible](https://img.shields.io/badge/CocoaPods-compatible-4BC51D.svg)
+![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)
 
 Naive Bayes classifier implemented in Swift
 
